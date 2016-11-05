@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+    {{ this.title }} | {{ site.name }}
+{% endblock %}
+
+
+{% block body %}
+
+
+{% block banner %}
+    {% if this.banner is defined %}
+        {% if this.banner_position is defined %}
+            {% set position = this.banner_position %}
+        {% else %}
+            {% set position = "center" %}
+        {% endif %}
+        <div class="container-fluid">
+            <div class="banner" style="background-image:
+            url(/images/{{this.banner}}); background-position: {{position}};">
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+
+<div class="container">
+
+    {% block breadcrumbs %}
+        <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            {% for bc in this.breadcrumbs[:-1] %}
+                <li><a href="{{ bc.url }}">{{ bc.title }}</a></li>
+            {% endfor %}
+            <li class="active">{{this.breadcrumbs[-1].title}}</li>
+        </ol>
+    {% endblock %}
+
+    {% block content %}
+
+        <h1>{{ this.title }}</h1>
+
+        {{ this.body }}
+
+    {% endblock %}
+
+</div>
+
+{% endblock %}
