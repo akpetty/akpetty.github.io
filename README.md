@@ -1,15 +1,5 @@
-# Souce code for leouieda.com
 
-[![Build Status](https://img.shields.io/travis/leouieda/website/master.svg?style=flat-square)](https://travis-ci.org/leouieda/website)
-[![Powered by Urubu](https://img.shields.io/badge/powered_by-urubu-blue.svg?style=flat-square)](http://urubu.jandecaluwe.com/)
-
-This is the source code for my personal site
-[leouieda.com](http://www.leouieda.com).
-
-## Dependencies
-
-You'll need to install Urubu and all it's dependencies to build the site. I
-have been using Python 3.5 for the build. See `environment.yml` for the
+See `environment.yml` for the
 complete dependency list.
 
 You can create a conda environment with all required dependencies by running
@@ -109,7 +99,7 @@ Optional:
     poster: 10.6084/m9.figshare.1089987
     doi: 10.1190/segam2012-0383.1
     thumbnail: seg2012.png
-    citation: Uieda, L., and V. C. F. Barbosa (2012), Use of the "shape-of-anomaly" data misfit in 3D inversion by planting anomalous densities, SEG Technical Program Expanded Abstracts, pp. 1-6, doi:10.1190/segam2012-0383.1
+    citation: 
 
 
 ## Automatic deploy with TravisCI
