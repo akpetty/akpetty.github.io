@@ -37,17 +37,17 @@ h3 {
 .menu {
     border: none;
     margin-bottom: 0px;
-    background-color: #2780e3;
-    color: #ffffff;
+    background-color: #ffffff ;
+    color: #587997 ;
     position: relative;
-    min-height: 50px;
+    min-height: 70px;
     display: block;
     font-size: 12pt;
     line-height:50px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 .menu a {
-    color: #ffffff;
+    color: #587997 ;
 }
 .menu-brand {
     font-size: 19px;
@@ -80,10 +80,10 @@ h3 {
 footer {
     width: 100%;
     margin-top: 100px;
-    background-color: #2780e3;
-    padding-top: 40px;
-    padding-bottom: 60px;
-    color: #afdddd;
+    background-color: #587997;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ffffff;
 }
 
 footer a {
@@ -127,7 +127,7 @@ p.pub-date-author {
 }
 
 .card-title {
-    color: #2780e3;
+    color: #ffffff;
 }
 
 img {
@@ -153,8 +153,8 @@ img {
 .banner {
     background-size: cover;
     width: 100%;
-    min-height: 300px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5) inset;
+    min-height: 180px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5) inset;
     margin: 0px;
 }
 
@@ -164,6 +164,6 @@ img {
 }
 
 .alert-blue {
-    background-color: #2780e3;
+    background-color: #ffffff;
 }
 

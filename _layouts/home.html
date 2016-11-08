@@ -27,7 +27,7 @@
 
     {{ this.body }}
 
-    {% set columns = 2 %}
+    {% set columns = 1 %}
     {% for row in this.content|batch(columns) %}
         <div class="row">
             {% for category in row %}

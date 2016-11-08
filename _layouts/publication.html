@@ -4,14 +4,13 @@
 
 {% block content %}
 
-
 <h1>{{ this.title }}</h1>
 
 {% if this.author is defined %}
     <p class="pub-date-author">
         by
         {% for author in this.author.split(', ') %}
-            {% if author == "uieda" %}
+            {% if author == "PETTY" %}
                 <strong>{{ site.author }}</strong>{% if not loop.last %}, {% endif%}
             {% else %}
                 {{ site.authors[author] }}{% if not loop.last %}, {% endif%}

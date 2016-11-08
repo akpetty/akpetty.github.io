@@ -1,8 +1,8 @@
-name: Leonardo Uieda
+name: Alek Petty
 
-title: "LEONARDO <strong>UIEDA</strong>"
+title: "<strong>ALEK PETTY</strong>"
 
-author: Leonardo Uieda
+author: Alek Petty
 
 keep_files: [".nojekyll"]
 
@@ -12,47 +12,48 @@ strict_undefined: true
 
 language: en
 
-keywords: 'science, geoscience, geophysics, software, open-source'
+keywords: 'science, sea ice, Arctic, Antarctic, open-source'
 
 menulinks: [
     ['/about', 'About'],
     #['/research', 'Research'],
-    #['/blog', 'Blog'],
+    ['/news', 'News'],
     ['/papers', 'Papers'],
-    ['/talks', 'Talks'],
-    ['/teaching', 'Teaching'],
-    ['/software', 'Software'],
+    #['/presentations', 'Presentations'],
+    #['/blog', 'Blog'],
+    ['/photos', 'Photos'],
     ['/contact', 'Contact'],
-    ['http://www.pinga-lab.org', 'PINGA lab'],
-    ['https://github.com/leouieda',
+    ['https://github.com/akpetty',
      '<i class="fa fa-github fa-lg" title="Github"></i>'],
-    ['https://twitter.com/leouieda',
+    ['https://twitter.com/alekpetty',
      '<i class="fa fa-twitter fa-lg" title="Twitter"></i>'],
     ]
 
 authors:
-    barbosa: Valéria C. F. Barbosa
-    carla: Carla Braitenberg
-    melo: Felipe F. Melo
-    oliveira-jr: Vanderlei C. Oliveira Jr
-    jbsilva: João B. C. Silva
-    daiana: Daiana P. Sales
-    carlos: Dionisio U. Carlos
-    ussami: Naomi Ussami
-    everton: Everton P. Bomfim
-    eder: Eder Molina
-    yli: Yaoguo Li
-    mbraga: Marco A. Braga
-    angeli: Glauco Angeli
-    peres: Guilherme Peres
+    petty: Alek Petty
+    feltham: Daniel Feltham
+    holland: Paul Holland
+    tsamados: Michel Tsamados
+    boisvert: Linette Boisvert
+    stroeve: Julienne Stroeve
+    richter: Jacqueline Richter-Menge
+    hutchings: Jennifer Hutchings
+    tschudi: Mark Tschudi
+    farrell: Sinead Farrell
+    newman: Thomas Newman
+    kurtz: Nathan Kurtz
+    flocco: Daniella Flocco
+    schroeder: David Schroeder
+    harbeck: Jeremy Harbeck
+
 
 reflinks:
-    leouieda:
-        url: http://www.leouieda.com
-        title: Leonardo Uieda
+    webite:
+        url: http://www.alekpetty.com
+        title: Alek Petty
     content_license:
         url: http://creativecommons.org/licenses/by/4.0/
         title: CC-BY License
     site_repo:
-        url: https://github.com/leouieda/website
-        title: leouieda/website
+        url: https://github.com/akpetty.github.io
+        title: akpetty
