@@ -3,7 +3,6 @@
 # http://sleepycoders.blogspot.com.au/2013/03/sharing-travis-ci-generated-files.html
 # and https://github.com/richfitz/wood
 echo -e "Preparing to copy generated files to alekpetty.com"
-echo "$TRAVIS_PULL_REQUEST"
 if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
     echo -e "Starting to update website\n"
     cp -R _build $HOME/keep
