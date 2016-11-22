@@ -1,4 +1,4 @@
-body {
+container {
     font-size: 12pt;
 }
 h1 {
@@ -148,6 +148,12 @@ img {
     line-height: 60px;
     font-size: 34px;
     font-weight: 300;
+}
+
+.content {
+    height: 10em;
+    padding: 2px; /* adjust to taste */
+    overflow: hidden    
 }
 
 .banner {
