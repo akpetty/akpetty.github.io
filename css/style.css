@@ -131,8 +131,28 @@ p.pub-date-author {
 }
 
 img {
+    width: 130%;
+}
+
+figure {
+   background-color: #fff;
+   padding: 10px;
+   font-size: .875em;
+   display: table;
+   float: left;
+}
+
+figure img {
+    display: block;
     width: 100%;
 }
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    background: #fff;
+    padding: 0 20px 2px;
+}​
 
 .container-fluid {
     padding: 0;
