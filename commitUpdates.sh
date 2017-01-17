@@ -9,6 +9,9 @@ cp -R _build/* ../akpetty.github.io
 echo -e "commit to Git"
 cd ../akpetty.github.io
 
+echo -e "pull any missing commits"
+git pull
+
 git add --all
 git commit -m "update"
 echo -e "Pushing to akpetty.github.io"
