@@ -70,85 +70,16 @@
 
         <!--<h1>Forecasts</h1>-->
 
-        <p>To add</p>
-<p>body {
-  display: flex;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}</p>
-<p>select {
-  margin-bottom: 1em;
-  padding: .25em;
-  border: 0;
-  border-bottom: 2px solid currentcolor; 
-  font-weight: bold;
-  letter-spacing: .15em;
-  border-radius: 0;
-  &amp;:focus, &amp;:active {
-    outline: 0;
-    border-bottom-color: red;
-  }
-}</p>
-<p>.images {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 3px 3px 3px 3px;
-  overflow: hidden;
-  box-shadow: 0 20px 15px -15px rgba(#000, .5);
-  img,
-  .loader,
-  .no-selection {
-    display: none;
-    letter-spacing: .15em;
-    font-weight: bold;
-  }
-  &amp;[data-selected=""]:not(.loading) {
-    background: #eee;
-    .no-selection {
-      display: block;
-    }
-  }
-  &amp;.loading {
-    background: #eee;
-    .loader {
-      display: block;
-      animation: loading 1.5s linear;
-    }
-  }
-}
-@for $i from 1 through 5 {
-  .images[data-selected="#{$i}"] {
-    img[data-image="#{$i}"] {
-      display: block;
-    }
-  }
-}</p>
-<p>@keyframes loading {
-  to {
-    letter-spacing: .25em;
-  }
-}</p>
-<p><select id="selectbox" data-selected="">
-  <option value="" selected="selected" disabled="disabled">Select an image</option>
-  <option value="2017">2017</option>
-  <option value="2016">2016</option>
-  <option value="2015">2015</option>
-  <option value="2014">2014</option>
-  <option value="2013">2013</option>
-</select></p>
-<div class="images" data-selected="">
-  <span class="loader">loading image...</span>
-  <span class="no-selection">no image selected</span>
-  <img src="https://github.com/akpetty/SeaIcePrediction/tree/master/Figures/Arctic/Predictions/forecastforecastDumpextentconcfm6pm9R019802017W1SIIv3.0multi.png" data-image="1" alt="2017" title="2017" />
-  <img src="https://github.com/akpetty/SeaIcePrediction/tree/master/Figures/Arctic/Predictions/forecastforecastDumpextentconcfm6pm9R019802017W1SIIv3.0multi.png" data-image="1" alt="2017" title="2017" />
-  <img src="https://github.com/akpetty/SeaIcePrediction/tree/master/Figures/Arctic/Predictions/forecastforecastDumpextentconcfm6pm9R019802017W1SIIv3.0multi.png" data-image="1" alt="2017" title="2017" />
-  <img src="https://github.com/akpetty/SeaIcePrediction/tree/master/Figures/Arctic/Predictions/forecastforecastDumpextentconcfm6pm9R019802017W1SIIv3.0multi.png" data-image="1" alt="2017" title="2017" />
-  <img src="https://github.com/akpetty/SeaIcePrediction/tree/master/Figures/Arctic/Predictions/forecastforecastDumpextentconcfm6pm9R019802017W1SIIv3.0multi.png" data-image="1" alt="2017" title="2017" />
+        <h2>2017 September Arctic sea ice forecasts using June data </h2>
+
+<div class="container">
+<figure>
+<img src="https://github.com/akpetty/SeaIcePrediction/tree/master/Figures/Arctic/Predictions/forecastforecastDumpextentconcfm6pm9R019802017W1SIIv3.0multi.png"
+     class="img-square"
+     title="September Arctic sea ice extent forecasts using June ice concentration data"
+     style="max-width: 400px; margin-right: 10px; margin-top: 5px; margin-bottom: 5px;">
+     <figcaption>Fig 1: September Arctic sea ice extent forecasts using June ice concentration data. The vertical line shows the prediction confidence interval (1 S.D.) of the 2017 forecast. The solid black lines are the observed extent using the NSIDC Arctic Sea Ice Index v3 while the black crosses show the forecast using linear trend persistence. </figcaption>
+</figure>
 </div>
 
 
