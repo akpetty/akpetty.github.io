@@ -71,6 +71,24 @@
         <!--<h1>Forecasts</h1>-->
 
         <p>To add</p>
+<p><select id="selectbox" data-selected="">
+  <option value="" selected="selected" disabled="disabled">Select an image</option>
+  <option value="1">Ocean Wall</option>
+  <option value="2">Skate Park</option>
+  <option value="3">Mountain View</option>
+  <option value="4">Cityscape</option>
+  <option value="5">Workshop</option>
+</select></p>
+<div class="images" data-selected="">
+  <span class="loader">loading image...</span>
+  <span class="no-selection">no image selected</span>
+  <img src="https://picsum.photos/300/300/?image=280" data-image="1" alt="Ocean Wall" title="Ocean Wall" />
+  <img src="https://picsum.photos/300/300/?image=281" data-image="2" alt="Skate Park" title="Skate Park" />
+  <img src="https://picsum.photos/300/300/?image=282" data-image="3" alt="Mountain View" title="Mountain View" />
+  <img src="https://picsum.photos/300/300/?image=283" data-image="4" alt="Cityscape" title="Cityscape" />
+  <img src="https://picsum.photos/300/300/?image=284" data-image="5" alt="Workshop" title="Workshop" />
+</div>
+
 <script type="text/javascript">
     (function() {
   var fn = function() {
