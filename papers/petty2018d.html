@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Alek Petty"/>
+            <meta name="keywords" content="science, sea ice, Arctic, Antarctic, open-source"/>
+    <title>    The NASA Eulerian Snow on Sea Ice Model (NESOSIM) v1.0: initial model development and analysis | Alek Petty
+</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Include the Source Sans Pro Google fonts CSS -->
+    <link rel="stylesheet" href="/css/sourcesanspro/sourcesanspro.css">
+    <!--Include the Font Awesome and Academicons CSS-->
+    <link rel="stylesheet" href="/css/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+    <!-- Google Analytics tracking code -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-32675609-3', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+</head>
+
+<body>
+
+<div class="container-fluid menu text-center">
+    <div class="col-lg-3 menu-brand">
+        <a href="/"><strong>ALEK PETTY</strong></a>
+    </div>
+    <div class="col-lg-9 menu-list">
+        <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/news">News</a></li>
+                <li><a href="/papers">Papers</a></li>
+                <li><a href="/presentations">Presentations</a></li>
+                <li><a href="/mentoring">Mentoring/Teaching/Outreach</a></li>
+                <li><a href="/media">Media</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/forecasts">Forecasts</a></li>
+                <li><a href="/photos">Photos</a></li>
+                <li><a href="https://github.com/akpetty"><i class="fa fa-github fa-lg" title="Github"></i></a></li>
+                <li><a href="https://twitter.com/alekpetty"><i class="fa fa-twitter fa-lg" title="Twitter"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="container">
+
+        <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+                <li><a href="/papers/">Papers</a></li>
+            <li class="active">The NASA Eulerian Snow on Sea Ice Model (NESOSIM) v1.0: initial model development and analysis</li>
+        </ol>
+
+
+<h1>The NASA Eulerian Snow on Sea Ice Model (NESOSIM) v1.0: initial model development and analysis</h1>
+
+    <p class="pub-date-author">
+        by
+                Alek Petty        (2018)
+    </p>
+
+
+
+
+
+<div class="row">
+    <div class="col-md-4">
+
+            <img class="pub-thumbnail"
+                 src="/images/thumb/nesosim.png"></img>
+
+        <h2>Info</h2>
+
+        <ul class="list-group">
+                    <li class="list-group-item">
+                            <i class="fa fa-book fa-fw" title="Journal name"></i>
+
+                        Journal: Geoscientific Model Development
+                    </li>
+                    <li class="list-group-item">
+                            <i class="fa fa-file-pdf-o fa-fw" title="Paper PDF"></i>
+
+                        PDF:
+                        <a href="/pdf/Petty2018d.pdf">Petty2018d.pdf</a>
+                    </li>
+                    <li class="list-group-item">
+                            <i class="fa fa-external-link fa-fw" title="DOI link to publisher"></i>
+
+                        doi: <a href="http://dx.doi.org/10.5194/gmd-11-4577-2018">10.5194/gmd-11-4577-2018</a>
+                    </li>
+        </ul>
+            <h2>Citation</h2>
+            <p>Petty, A. A., Webster, M., Boisvert, L., and Markus, T. (2018), The NASA Eulerian Snow on Sea Ice Model (NESOSIM) v1.0: initial model development and analysis, Geosci. Model Dev., 11, 4577-4602, doi: 10.5194/gmd-11-4577-2018.</p>
+    </div>
+
+    <div class="col-md-8">
+            <h2 id="abstract">Abstract</h2>
+<p>The NASA Eulerian Snow On Sea Ice Model (NESOSIM) is a new, open-source snow budget model that is currently configured to produce daily estimates of the depth and density of snow on sea ice across the Arctic Ocean through the accumulation season. NESOSIM has been developed in a three-dimensional Eulerian framework and includes two (vertical) snow layers and several simple parameterizations (accumulation, wind packing, advection–divergence, blowing snow lost to leads) to represent key sources and sinks of snow on sea ice. The model is forced with daily inputs of snowfall and near-surface winds (from reanalyses), sea ice concentration (from satellite passive microwave data) and sea ice drift (from satellite feature tracking) during the accumulation season (August through April). In this study, we present the NESOSIM formulation, calibration efforts, sensitivity studies and validation efforts across an Arctic Ocean domain (100km horizontal resolution). The simulated snow depth and density are calibrated with in situ data collected on drifting ice stations during the 1980s. NESOSIM shows strong agreement with the in situ seasonal cycles of snow depth and density, and shows good (moderate) agreement with the regional snow depth (density) distributions. NESOSIM is run for a contemporary period (2000 to 2015), with the results showing strong sensitivity to the reanalysis-derived snowfall forcing data, with the Modern-Era Retrospective analysis for Research and Applications (MERRA) and the Japanese Meteorological Agency 55-year reanalysis (JRA-55) forced snow depths generally higher than ERA-Interim, and the Arctic System Reanalysis (ASR) generally lower. We also generate and force NESOSIM with a consensus median daily snowfall dataset from these reanalyses. The results are compared against snow depth estimates derived from NASA's Operation IceBridge (OIB) snow radar data from 2009 to 2015, showing moderate–strong correlations and root mean squared errors of  ∼ 10cm depending on the OIB snow depth product analyzed, similar to the comparisons between OIB snow depths and the commonly used modified Warren snow depth climatology. Potential improvements to this initial NESOSIM formulation are discussed in the hopes of improving the accuracy and reliability of these simulated snow depths and densities.</p>
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.5194/gmd-11-4577-2018"></div>
+
+<h2 id="bibtex">Bibtex</h2>
+<div class="codehilite"><pre><span></span>@Article{gmd-11-4577-2018,
+AUTHOR = {Petty, A. A. and Webster, M. and Boisvert, L. and Markus, T.},
+TITLE = {The NASA Eulerian Snow on Sea Ice Model (NESOSIM) v1.0: initial model
+development and analysis},
+JOURNAL = {Geoscientific Model Development},
+VOLUME = {11},
+YEAR = {2018},
+NUMBER = {11},
+PAGES = {4577--4602},
+URL = {https://www.geosci-model-dev.net/11/4577/2018/},
+DOI = {10.5194/gmd-11-4577-2018}
+}
+</pre></div>
+    </div>
+</div>
+
+
+
+</div>
+
+
+    <footer>
+<div class="container">
+
+    <p class="text-center">
+        Hosted on <a href="https://pages.github.com/">Github Pages</a>.
+        The source code to build this site is available at
+        <a href="https://github.com/akpetty/akpetty.github.io">akpetty</a>.
+        </br>
+        Built using <a href="http://urubu.jandecaluwe.com/">Urubu</a>
+        and <a href="http://getbootstrap.com/">Bootstrap</a> with
+        icons by <a href="http://fontawesome.io/">Font Awesome</a>
+        and <a href="http://jpswalsh.github.io/academicons/">Academicons</a>.
+        </br>
+        This website was adapted from the excellent open source site of <a href="http://www.leouieda.com/">Leonardo Uieda</a>.
+        <!--Except where noted, all content is available under the
+        <a rel="license"
+           href="http://creativecommons.org/licenses/by/4.0/">CC-BY License</a>.-->
+        </br>
+        This website uses
+        <a href="https://analytics.google.com">Google Analytics</a>
+        to monitor visitor statistics.
+    </p>
+
+</div>    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- ================================================== -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- For the altmetric badge in articles -->
+    <script type='text/javascript'
+     src='https://awda.cloudfront.net/assets/embed.js'></script>
+
+</body>
+</html>
