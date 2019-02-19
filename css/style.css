@@ -1,4 +1,4 @@
-body {
+container {
     font-size: 12pt;
 }
 h1 {
@@ -131,8 +131,28 @@ p.pub-date-author {
 }
 
 img {
+    width: 130%;
+}
+
+figure {
+   background-color: #fff;
+   padding: 10px;
+   font-size: .875em;
+   display: table;
+   float: left;
+}
+
+figure img {
+    display: block;
     width: 100%;
 }
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    background: #fff;
+    padding: 0 20px 2px;
+}​
 
 .container-fluid {
     padding: 0;
@@ -148,6 +168,12 @@ img {
     line-height: 60px;
     font-size: 34px;
     font-weight: 300;
+}
+
+.content {
+    height: 10em;
+    padding: 2px; /* adjust to taste */
+    overflow: hidden    
 }
 
 .banner {
