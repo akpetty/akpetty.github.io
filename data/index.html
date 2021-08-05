@@ -71,16 +71,34 @@
         <p>A list of polar climate datasets and code repositories I have helped develop, document and/or disseminate.</p>
 <h2>Datasets</h2>
 
+<p><b>ICESat-2 Arctic sea ice thickness</b>   </p>
+<p>The ICESat-2 L4 Monthly Gridded Sea Ice Thickness dataset IS2SITMOGR4. This data set reports monthly, gridded winter sea ice thickness across the Arctic Ocean. Sea ice thickness is estimated using ATLAS/ICESat-2 L3A Sea Ice Freeboard (ATL10) and NASA Eulerian Snow On Sea Ice Model (NESOSIM) snow loading.</p>
+<p>Data: <a href="https://nsidc.org/data/IS2SITMOGR4">https://nsidc.org/data/IS2SITMOGR4</a></p>
+<p>Citation: Petty, A. A., N. Kurtz, R. Kwok, T. Markus, and T. A. Neumann. 2021. ICESat-2 L4 Monthly Gridded Sea Ice Thickness, Version 1. [Indicate subset used]. Boulder, Colorado USA. NASA National Snow and Ice Data Center Distributed Active Archive Center. doi: 10.5067/CV6JEXEE31HF.</p>
 <p><b>ICESat-2 ATL20</b> <br />
-The ATLAS/ICESat-2 L3B ATL20 Daily and Monthly Gridded Sea Ice Freeboard data set from the Ice, Cloud, and land Elevation Satellite-2 (ICESat-2) mission contains daily and monthly gridded estimates of sea ice freeboard height, derived from along-track freeboard height estimates in the ATLAS/ICESat-2 L3A Sea Ice Freeboard product (ATL10). Data are available on a 25 km x 25 km SSM/I Polar Stereographic grid.   </p>
+The ATLAS/ICESat-2 L3B ATL20 Daily and Monthly Gridded Sea Ice Freeboard data set from the Ice, Cloud, and land Elevation Satellite-2 (ICESat-2) mission. This data set (ATL20) contains daily and monthly gridded estimates of sea ice freeboard, derived from along-track freeboard estimates in the ATLAS/ICESat-2 L3A Sea Ice Freeboard product (ATL10). Data are gridded at 25 km using the SSM/I Polar Stereographic Projection.  </p>
 <p>Data: <a href="https://nsidc.org/data/ATL20/">https://nsidc.org/data/ATL20/</a></p>
 <p>Citation: Petty, A. A., R. Kwok, M. Bagnardi, A. Ivanoff, N. Kurtz, J. Lee, J. Wimert, and D. Hancock. 2020. ATLAS/ICESat-2 L3B Daily and Monthly Gridded Sea Ice Freeboard, Version 1. [Indicate subset used]. Boulder, Colorado USA. NASA National Snow and Ice Data Center Distributed Active Archive Center. doi:10.5067/ATLAS/ATL20.001.</p>
-<p><b>NESOSIM</b>    <br />
-Estimates of Arctic sea ice snow depth and density from the NASA Eulerian Snow On Sea Ice Model (NESOSIM) version 1.0.  Data are available daily through the winter accumulation period on a 100 km x 100 km North Polar Stereographic grid.    </p>
+<p><b>ICESat-2 ATL21</b> <br />
+The ATLAS/ICESat-2 L3B Daily and Monthly Gridded Polar Sea Surface Height Anomaly data set from the Ice, Cloud, and land Elevation Satellite-2 (ICESat-2) mission. This data set contains daily and monthly gridded polar sea surface height (SSH) anomalies, derived from the along-track ATLAS/ICESat-2 L3A Sea Ice Height product (ATL10, V4). The ATL10 product identifies leads in sea ice and establishes a reference sea surface used to estimate SSH in 10 km along-track segments. ATL21 aggregates the ATL10 along-track SSH estimates and computes daily and monthly gridded SSH anomaly in NSIDC Polar Stereographic Northern and Southern Hemisphere 25 km grids.</p>
+<p>Data: <a href="https://nsidc.org/data/ATL20/">https://nsidc.org/data/ATL20/</a></p>
+<p>Citation: Petty, A. A., R. Kwok, M. Bagnardi, N. Kurtz, J. Wimert, J. Lee, and D. Hancock. 2021. ATLAS/ICESat-2 L3B Daily and Monthly Gridded Polar Sea Surface Height Anomaly, Version 1. [Indicate subset used]. Boulder, Colorado USA. NASA National Snow and Ice Data Center Distributed Active Archive Center. doi: 10.5067/ATLAS/ATL21.001.</p>
+<p><b>NESOSIM v1.1 (1980-2021)</b> </p>
+<p>Updated estimates of Arctic sea ice snow depth and density from the NASA Eulerian Snow On Sea Ice Model (NESOSIM) version 1.1.  Data are available daily through the winter accumulation period on a 100 km x 100 km grid that includes the Arctic Ocean and peripheral seas on a North Polar Stereographic projection (EPSG: 3413).</p>
+<p>Data: <a href="https://doi.org/10.5281/zenodo.5164313">https://doi.org/10.5281/zenodo.5164314</a>.</p>
+<p>Code repository archive: Petty, Alek, &amp; Cabaj, Alex. (2021). NASA Eulerian Snow On Sea Ice Model Version 1.1 (NESOSIMv1.1) data: 1980 - 2021 (September to April) (v1.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.5164314</p>
+<p>Original paper reference: Petty, A. A., M. Webster, L. N. Boisvert, T. Markus (2018), The NASA Eulerian Snow on Sea Ice Model (NESOSIM) v1.0: Initial model development and analysis, Geosci. Model Dev., doi: 10.5194/gmd-11-4577-2018.</p>
+<p><b>NESOSIM v1.0 (2000-2015)</b> </p>
+<p>Original estimates of Arctic sea ice snow depth and density from the NASA Eulerian Snow On Sea Ice Model (NESOSIM) version 1.0. Data are available daily through the winter accumulation period on a 100 km x 100 km North Polar Stereographic grid.    </p>
 <p>Data: <a href="https://earth.gsfc.nasa.gov/cryo/data/nasa-eulerian-snow-sea-ice-model-nesosim">https://earth.gsfc.nasa.gov/cryo/data/nasa-eulerian-snow-sea-ice-model-nesosim</a>.</p>
 <p>Citation: Petty, A. A., M. Webster, L. N. Boisvert, T. Markus (2018), The NASA Eulerian Snow on Sea Ice Model (NESOSIM) v1.0: Initial model development and analysis, Geosci. Model Dev., doi: 10.5194/gmd-11-4577-2018.</p>
 <h2>Code</h2>
 
+<p>Public code repositories associated with my publications are listed in the <a href="/papers/">Papers</a> tab and are generally available on my GitHub profile: https://github.com/akpetty. A few noteworthy repositories/projects I have contributed to are listed here:</p>
+<p><b>NESOSIM</b>  </p>
+<p>The NASA Eulerian Snow On Sea Ice Model (NESOSIM) is an open-source, three-dimensional, two-layer (vertical), Eulerian snow on sea ice budget model developed with the primary aim of producing daily estimates of the depth and density of snow on sea ice across the polar oceans.    </p>
+<p>GitHub link: <a href="https://github.com/akpetty/NESOSIM">https://github.com/akpetty/NESOSIM</a>.</p>
+<p>Code archive: <a href="https://doi.org/10.5281/zenodo.4448355">https://doi.org/10.5281/zenodo.4448355</a>.</p>
 <p><b>ICESat-2 hackweek tutorials</b>    <br />
 Open source Python code developed for the ICESat-2 hackweek 2020.       </p>
 <p>GitHub link: <a href="https://github.com/ICESAT-2HackWeek/2020_ICESat-2_Hackweek_Tutorials">https://github.com/ICESAT-2HackWeek/2020_ICESat-2_Hackweek_Tutorials</a>.</p>
