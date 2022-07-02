@@ -15,7 +15,7 @@ git pull
 git add --all
 git commit -m "update"
 echo -e "Pushing to akpetty.github.io"
-git push origin main
+git push origin master
 
 echo -e "Done"
 
