@@ -225,13 +225,13 @@ figcaption {
 p > b,
 b {
     font-weight: bold;
-    display: inline;
-    font-size: inherit;
+    display: inline !important;
+    font-size: inherit !important;
+    margin-bottom: 0 !important;
 }
 
-/* Override: ensure bold tags stay inline and normal size when paragraph contains script or altmetric */
-p:has(script) > b,
-p:has(.altmetric-embed) > b {
+/* Override for papers page - if page has altmetric embeds anywhere, all bold stays inline */
+body:has(.altmetric-embed) p > b {
     display: inline !important;
     font-size: inherit !important;
     margin-bottom: 0 !important;
@@ -239,9 +239,9 @@ p:has(.altmetric-embed) > b {
 
 /* Only apply larger size and block display for dataset names on data page */
 /* Target bold tags in paragraphs that come after h2 or h3 headings */
-/* But exclude paragraphs that contain script tags or altmetric embeds (papers page structure) */
-h2 ~ p:not(:has(script)):not(:has(.altmetric-embed)) > b,
-h3 ~ p:not(:has(script)):not(:has(.altmetric-embed)) > b {
+/* But ONLY if the page does NOT have altmetric embeds (papers page has them) */
+body:not(:has(.altmetric-embed)) h2 ~ p > b,
+body:not(:has(.altmetric-embed)) h3 ~ p > b {
     font-size: 12.5pt;
     display: block;
     margin-bottom: 5px;
