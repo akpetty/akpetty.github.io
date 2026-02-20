@@ -1,0 +1,9 @@
+.*~
+.*.swp
+.travis.yml
+
+# Cursor IDE files
+.cursorignore
+.cursorrules
+.cursor/
+*.code-workspace
