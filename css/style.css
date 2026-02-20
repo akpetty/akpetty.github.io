@@ -229,11 +229,19 @@ b {
     font-size: inherit;
 }
 
+/* Override: ensure bold tags stay inline and normal size when paragraph contains script or altmetric */
+p:has(script) > b,
+p:has(.altmetric-embed) > b {
+    display: inline !important;
+    font-size: inherit !important;
+    margin-bottom: 0 !important;
+}
+
 /* Only apply larger size and block display for dataset names on data page */
-/* Target bold tags in paragraphs that come after h2 or h3 headings on data page */
-/* Exclude paragraphs followed by script tags (papers page structure) */
-h2 ~ p:not(:has(+ script)) > b,
-h3 ~ p:not(:has(+ script)) > b {
+/* Target bold tags in paragraphs that come after h2 or h3 headings */
+/* But exclude paragraphs that contain script tags or altmetric embeds (papers page structure) */
+h2 ~ p:not(:has(script)):not(:has(.altmetric-embed)) > b,
+h3 ~ p:not(:has(script)):not(:has(.altmetric-embed)) > b {
     font-size: 12.5pt;
     display: block;
     margin-bottom: 5px;
