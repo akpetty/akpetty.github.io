@@ -221,25 +221,17 @@ figcaption {
     height: 100%;
 }
 
-/* Style dataset names (bold tags in paragraphs) to match heading style - only on data page */
-/* Default: keep bold inline and normal size for all pages */
-p > b {
+/* Default: all bold tags are just bold, inline, normal size */
+p > b,
+b {
     font-weight: bold;
     display: inline;
     font-size: inherit;
 }
 
-/* Override for papers page - ensure bold stays inline and normal size */
-/* Papers page has script tags followed by altmetric embeds after paragraphs with bold */
-p:has(+ script) > b {
-    display: inline !important;
-    font-size: inherit !important;
-    margin-bottom: 0 !important;
-}
-
-/* Only apply larger size and block display on data page */
-/* Target bold tags in paragraphs that come after h2 or h3 headings */
-/* But exclude paragraphs that are followed by script tags (papers page structure) */
+/* Only apply larger size and block display for dataset names on data page */
+/* Target bold tags in paragraphs that come after h2 or h3 headings on data page */
+/* Exclude paragraphs followed by script tags (papers page structure) */
 h2 ~ p:not(:has(+ script)) > b,
 h3 ~ p:not(:has(+ script)) > b {
     font-size: 12.5pt;
