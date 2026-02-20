@@ -219,24 +219,9 @@ figcaption {
 /* Style dataset names (bold tags in paragraphs) to match heading style */
 p > b {
     font-weight: bold;
-    font-size: 13.5pt;
+    font-size: 12.5pt;
     display: block;
     margin-bottom: 5px;
-}
-
-/* Indent content under dataset names in data page */
-/* Target paragraphs and lists that follow a paragraph containing a bold tag (dataset name) */
-p:has(> b) ~ p:not(:has(> b)),
-p:has(> b) ~ ul {
-    margin-left: 30px;
-    margin-bottom: 8px;
-}
-
-/* Stop indenting when we hit the next dataset (paragraph with bold) or heading */
-p:has(> b) ~ p:has(> b),
-p:has(> b) ~ h3,
-p:has(> b) ~ h2 {
-    margin-left: 0 !important;
 }
 
 
