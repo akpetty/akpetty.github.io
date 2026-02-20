@@ -14,6 +14,11 @@ h3 {
     font-size: 14pt;
     margin-bottom: 15px;
 }
+h4 {
+    font-weight: bold;
+    font-size: 13pt;
+    margin-bottom: 12px;
+}
 
 .breadcrumb {
     margin-top: 21px;
@@ -220,23 +225,26 @@ figcaption {
 /* Default: keep bold inline and normal size for all pages */
 p > b {
     font-weight: bold;
-}
-
-/* Only apply larger size and block display on data page */
-/* Target bold tags in paragraphs that come after h2 or h3 headings (data page structure) */
-h2 ~ p > b,
-h3 ~ p > b {
-    font-size: 12.5pt;
-    display: block;
-    margin-bottom: 5px;
+    display: inline;
+    font-size: inherit;
 }
 
 /* Override for papers page - ensure bold stays inline and normal size */
-/* Papers page has altmetric embeds, so exclude those contexts */
-p:has(+ .altmetric-embed) > b {
+/* Papers page has script tags followed by altmetric embeds after paragraphs with bold */
+p:has(+ script) > b {
     display: inline !important;
     font-size: inherit !important;
     margin-bottom: 0 !important;
+}
+
+/* Only apply larger size and block display on data page */
+/* Target bold tags in paragraphs that come after h2 or h3 headings */
+/* But exclude paragraphs that are followed by script tags (papers page structure) */
+h2 ~ p:not(:has(+ script)) > b,
+h3 ~ p:not(:has(+ script)) > b {
+    font-size: 12.5pt;
+    display: block;
+    margin-bottom: 5px;
 }
 
 
