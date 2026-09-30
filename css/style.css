@@ -9,6 +9,11 @@ h2 {
     font-size: 15pt;
     margin-bottom: 15px;
 }
+h2.section-title {
+    font-size: 1em;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
 h3 {
     font-weight: bold;
     font-size: 14pt;
